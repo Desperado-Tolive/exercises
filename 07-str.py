@@ -88,12 +88,12 @@ print(len(s1))  # 22
 print(s.count("m",7))   # 1
 print()
 
-#8 str.find()   查找字符串中是否具有指定的字符串，返回第一次出现的位置，查找不到返回-1
+#8 str.find()   查找字符串中是否具有指定的字符串，返回第一次出现的位置（下标），查找不到返回-1
 #  str.rfind()  反向查找
 print(s.find("a",3))    # 7
 print(s.find("z",0))    # -1
 
-#9 str.index()  查找字符串中是否具有指定的字符串，返回第一次出现的位置，查找不到直接报错
+#9 str.index()  查找字符串中是否具有指定的字符串，返回第一次出现的位置（下标），查找不到直接报错
 #  str.rindex() 反向查找
 print(s.index("a",3))   # 7
 #print(s.index("z",0))  Error
