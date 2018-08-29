@@ -248,7 +248,7 @@ S = "abcdefg"     S.strip("abdfg")的返回值是"cde"
 s = "零填充"
 print(s.zfill(9))   # 000000零填充
 
-#22 S.replace(被替换字符串,替换字符串)   # 字符串替换操作
+#22 S.replace(被替换字符串,替换字符串)   # 字符串替换操作，用于长字符替换
 s = "我要睡。觉了。。 "
 s1 = "。要。要。要 "
 
@@ -256,7 +256,7 @@ print(s.replace("。","！",1)) # 我要睡觉了！。
 print(s.replace("。。","！！"))# 我要睡觉了！！
 
 #23 S.maketrans('被替换的字符串','生成一个用于字符串替换的映射表，为了给translate函数使用，返回映射表
-#24 S.translate(S.maketrans) 进行字符串翻译操作，类似转换
+#24 S.translate(S.maketrans) 进行字符串翻译操作，类似转换，用于多字符替换
 a = s2.maketrans("要。","my") # s2可以是空值，且只是形式，可不定义s2。等于只是给不同的maketrans命名用于区分
 print(a)                # {12290: 109, 35201: 121}
 print(s.translate(a))   # 我m睡y觉了yy  即 要——m  。——y
