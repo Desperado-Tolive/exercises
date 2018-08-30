@@ -85,17 +85,17 @@ print(len(s))   # 20
 print(len(s1))  # 22
 
 #7 S.count()  计算字符串中出现指定字符串的次数，返回整型
-print(s.count("t",0,1))   # 0  [start, [end]]含左不含右
+print(s.count("t",0,1))   # 0  [start, [stop]]含左不含右
 print()
 
 #8 S.find()   查找字符串中是否具有指定的字符串，返回第一次出现的位置（下标），查找不到返回-1
 #  S.rfind()  反向查找
-print(s.find("a",3,9))    # 7 [start, [end]]含左不含右
+print(s.find("a",3,9))    # 7 [start, [stop]]含左不含右
 print(s.find("z",0,1))    # -1
 
 #9 S.index()  查找字符串中是否具有指定的字符串，返回第一次出现的位置（下标），查找不到直接报错
 #  S.rindex() 反向查找
-print(s.index("a",3,9))   # 7 [start, [end]]含左不含右
+print(s.index("a",3,9))   # 7 [start, [stop]]含左不含右
 #print(s.index("z",0))  Error
 
 #10 S.startswith()  检测字符串是否以指定的字符串开头(可指定起始检测位置)，返回布尔值
