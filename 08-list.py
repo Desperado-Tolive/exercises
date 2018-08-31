@@ -1,3 +1,32 @@
+# 数据结构（Data Structures）基本上人如其名——它们只是一种结构，能够将一些数据聚合在一起。换句话说，它们是用来存储一系列相关数据的集合。
+# Python 中有四种内置的数据结构——列表（List）、元组（Tuple）、字典（Dictionary）和集合（Set）。我们将了解如何使用它们，并利用它们将我们的编程之路变得更加简单。
+
+
+# 列表是一种用于保存一系列有序项目的集合，也就是说，你可以利用列表保存一串项目的序列。想象起来也不难，你可以想象你有一张购物清单，上面列出了需要购买的商品，除开在购物清单上你可能为每件物品都单独列一行，在 Python 中你需要在它们之间多加上一个逗号。
+# 项目的列表应该用方括号括起来，这样 Python 才能理解到你正在指定一张列表。一旦你创建了一张列表，你可以添加、移除或搜索列表中的项目。既然我们可以添加或删除项目，我们会说列表是一种可变的（Mutable）数据类型，意即，这种类型是可以被改变的。
+# This is my shopping list
+shoplist = ['apple', 'mango', 'carrot', 'banana']
+
+print('I have', len(shoplist), 'items to purchase.')
+
+print('These items are:', end=' ')
+for item in shoplist:
+    print(item, end=' ')
+
+print('\nI also have to buy rice.')
+shoplist.append('rice')
+print('My shopping list is now', shoplist)
+
+print('I will sort my list now')
+shoplist.sort()
+print('Sorted shopping list is', shoplist)
+
+print('The first item I will buy is', shoplist[0])
+olditem = shoplist[0]
+del shoplist[0]
+print('I bought the', olditem)
+print('My shopping list is now', shoplist)
+
 #1 L.append(object) -> None 追加对象到末尾，无返回值 //原地追加 （即在原有列表追加，还是原来的地址）
 l = [1,2,10,3,4,5]
 print(id(l))
