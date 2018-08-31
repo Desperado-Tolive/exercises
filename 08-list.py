@@ -27,6 +27,7 @@ del shoplist[0]
 print('I bought the', olditem)
 print('My shopping list is now', shoplist)
 
+
 #1 L.append(object) -> None 追加对象到末尾，无返回值 //原地追加 （即在原有列表追加，还是原来的地址）
 l = [1,2,10,3,4,5]
 print(id(l))
