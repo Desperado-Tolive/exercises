@@ -41,6 +41,27 @@ ab['Guido'] = 'guido@python.org'
 if 'Guido' in ab:
     print("\nGuido's address is", ab['Guido'])
 
+# 阅读下面的代码，写出A0，A1至An的最终值。
+A0 = dict(zip(('a','b','c','d','e'),(1,2,3,4,5)))
+A1 = range(10)
+A2 = [i for i in A1 if i in A0]     # []
+A3 = [A0[s] for s in A0]            # [1,2,3,4,5]
+A4 = [i for i in A1 if i in A3]     # [1,2,3,4,5]
+A5 = {i:i*i for i in A1}            # {0:0,1:1,2:4,3:9,4:16,5:25,6:36,7:49,8:64,9:81}
+A6 = [[i,i*i] for i in A1]          # [[0,0],[1,1],[2,4]...]
+
+# 下面代码会输出什么：
+
+def f(x,l=[]):
+    for i in range(x):
+        l.append(i*i)
+    print(l)
+
+f(2)            # l = [0, 1]
+f(3,[3,2,1])    # l = [3, 2, 1, 0, 1, 4]
+f(3)            # l = [0, 1, 0, 1, 4]
+
+
 #1 D.clear() -> None    清空字典，无返回值 //原地删除
 d = {1:'a',2:'b'}
 d.clear()
